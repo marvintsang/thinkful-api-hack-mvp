@@ -1,0 +1,1 @@
+Application to search a city and it's nearby hikes and places to eat, all in one convenient location.
