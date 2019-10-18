@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+#distanceNearby {
+  width: 50px;
+}
+
+.Hidden {
+  display: none;
+}
+#cityTemp {
+  text-align: center;
+}
+
+#nearbyHikes {
+  height: 400px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#map {
+  height: 100%;
+  background-color: grey;
+  position: relative;
+  width: 100%;
+}
+
+/*Fills the full screen */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#mapContainer {
+  display: flex;
+  height: 500px;
+  position: relative;
+}
+
+.userLanding {
+  text-align: center;
+}
+
+/* Styling for an info pane that slides out from the left. 
+  * Hidden by default. */
+#panel {
+  height: 100%;
+  width: null;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+  overflow-x: auto;
+  transition: all 0.2s ease-out;
+  top: 0px;
+  left: 0px;
+}
+
+.open {
+  width: 250px;
+}
+
+/* Styling for place details */
+.hero {
+  width: 100%;
+  height: auto;
+  max-height: 166px;
+  display: block;
+}
+
+.place,
+p {
+  font-family: "open sans", arial, sans-serif;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.details {
+  color: darkslategrey;
+}
+
+a {
+  text-decoration: none;
+  color: cadetblue;
+}

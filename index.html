@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class = "userLanding">
+      <h1>Hiking before Hamburgers?</h1>
+      <h2>Search a city to find nearby hikes and eateries!</h2>
+    <form action="submit" id="parkSearchForm">
+      <select id="stateSelect" required>
+        <option disabled selected value>Select State</option>
+      </select>
+      <select id="citySelect" required>
+        <option disabled selected value>Select City</option>
+      </select>
+      <label for="distanceNearby">Within</label><input name="distanceNearby" type="number" id="distanceNearby" min="0" max="200" value="30">Miles</input>
+      <input type="submit" value="Search"></input>
+    </form>
+    </div>
+    <div id='cityTemp'>
+    </div>
+    <div class="Hidden" id="Loading">
+      <img class="irc_mi" src="https://i.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.webp" alt="Image result for loading gif" width="256" height="256" style="">
+    </div>
+    <div id="nearbyHikes">
+    </div>
+    
+    <!-- side panel for information -->
+    <div id="mapContainer">
+    <div id="panel" class="Hidden"></div>
+    <div id="map" class="Hidden"></div>
+    </div>
+    
+    <!-- Map appears here -->
+  </body>
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+<script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsfkexg0EEXT5svBokTMtgyRlfoOj1Zxo&libraries=places&callback=initMap"
+    ></script>
+</html>
